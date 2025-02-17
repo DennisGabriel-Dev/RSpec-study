@@ -19,4 +19,12 @@ describe Student do
       expect(subject.say_hi).to eq('hi, i\'m Unknown')
     end
   end
+
+  context '#name' do
+    it 'return student\'s name' do
+      name = 'Dennis'
+      subject.name = name
+      expect(subject.name).to eq(name)
+    end
+  end
 end
